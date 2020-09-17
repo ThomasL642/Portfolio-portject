@@ -1,0 +1,121 @@
+/* 
+Font: Helvetica
+*/
+
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+/* Nav bar */
+nav ul {
+    list-style: none;
+
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+}
+
+nav li {
+    float: right;
+}
+
+nav .nav-item {
+    min-width: 100px;
+    text-align: center;
+
+    background-color: #4e382200;
+}
+
+nav .nav-item a {
+    color: #dbe9ee !important;
+}
+
+nav .nav-item:hover a {
+    color: #ffffff !important;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 56px);
+
+    background-image: url("../images/header-bg.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header .showcase {
+    position: absolute;
+    top: 25vh;
+
+    width: 100%;
+
+    color: #ffffff;
+    text-align: center;
+}
+
+header .showcase h1 {
+    font-style: italic;
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+}
+
+header .showcase h3 {
+    font-size: 1rem;
+}
+
+header .buttons {
+    position: absolute;
+    bottom: 10vh;
+
+    width: 100%;
+}
+
+header .buttons .row {
+    margin: auto;
+    max-width: 450px;
+}
+
+header .buttons a {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+
+    cursor: pointer;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+
+    color: #111111;
+    border: #ffffff 3px solid;
+    background-color: #cea16a;
+
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+
+    transition-duration: 0.1s;
+}
+
+header .buttons a:hover {
+
+    color: #ffffff !important;
+    border: #cea16a 3px solid;
+    background-color: #cea16a00;
+
+}
+
+header .learn {
+    margin-left: 0px;
+}
+
+header .appointment {
+    margin-right: 0px;
+}
