@@ -1,64 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eastern Horizons</title>
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/media.css">
-
 </head>
 <body>
 
-    <!--Navigation bar-->
-    <nav class="navbar sticky-top">
-        <ul>
+    <!--Social media links-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0" nonce="q45Yk4gW"></script>
 
-            <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-            </li>
+    <!--/Social media links-->
 
-        </ul>   
-    </nav>
-
-    <!--Showcase / Main header-->
     <header>
-        
-        <!--Quotation-->
-        <div class="showcase">
-            <div class="container">
-                <h1>"Try us once & you'll become a regular customer"</h1>
-                <h3>Providing quality hair-cutting services at very competitive prices.</h3>
-            </div>
-        </div>
 
-        <!--Calls to action-->
-        <div class="container-fluid buttons">
-            <div class="row">
+        <div class="background"></div>
 
-                <div class="col-6">
-                    <a class="appointment">Book an Appointment</a>
-                </div>
-                <div class="col-6">
-                    <a class="learn">Learn More</a>
-                </div>
-                
-            </div>
+        <div class="foreground">
+            
+            <h1 class="title">Eastern Horizons</h1>
+
         </div>
 
     </header>
 
+    <nav class="front">
+        <ul>
+
+            <li class="current_page_item"><a href="#">
+                <p>Home</p><img src="/images/SVGs/Home-icon.svg" alt="Home">
+            </a></li>
+
+            <li class=""><a href="#">
+                <p>Stories</p><img src="/images/SVGs/Stories-icon.svg" alt="Stories">
+            </a></li>
+
+            <!--
+            <li class=""><a href="#">
+                <p>Blog</p><img src="/images/SVGs/Blog-icon.svg" alt="Blog">
+            </a></li>
+            -->
+
+            <li class=""><a href="#">
+                <p>About</p><img src="/images/SVGs/About-icon.svg" alt="About">
+            </a></li>
+
+        </ul>
+    </nav>
+
+    <section class="latest front">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-8 right">
+
+                    <h1>Eastern Horizons</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus ex numquam vero minima excepturi facere, ratione et ut in illum quo nemo atque corrupti.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus impedit id, consequatur saepe quo dolore corporis explicabo magnam corrupti consectetur aperiam? Omnis rem, repellat sunt ipsam expedita vel corporis, quos, libero tempora modi iste cupiditate laboriosam rerum fuga saepe fugit?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, explicabo?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                    <div class="btn-container">
+
+                        <a class="btn primary hvr-icon-forward" href="#">Purchase Now <img src="/images/SVGs/Arrow_Light-Right.svg" alt="Arrow" class="hvr-icon"></a>
+                        <a class="btn secondary hvr-icon-forward" href="#">Read More <img src="/images/SVGs/Arrow_Dark-Right.svg" alt="Arrow" class="hvr-icon"></a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 left">
+                    <img src="/images/3d-Book.jpg" alt="Book Cover" class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="others">
+
+        <div class="container">
+            <h1 class="title">Latest Works</h1>
+
+            <div class="row">
+
+                <div class="col-xl-5">
+                    <div class="container primary">
+                        
+                        <div class="img-container">
+                            <img src="/images/Article Covers/Last_Outpost-Cover.jpg" alt="Work Cover" class="img-fluid">
+                        </div>
+
+                        <div class="overlay">
+                            <h1>The Last Outpost</h1>
+                            <i>2020 / 09 / 22</i>
+                            <p>Summary Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nesciunt cumque asperiores perspiciatis laudantium et voluptatum, facilis unde incidunt ex, modi adipisci laboriosam odio distinctio doloribus voluptate dolor. Autem nulla dolores eveniet quis sed magni eaque.</p>
+                            <a href="#" class="hvr-underline-from-left">Read More</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-xl-7">
+                    <div class="row">
+
+                        <div class="container secondary">
+                            <div class="row">
+
+                                <div class="col-5">
+                                    <div class="img-container">
+                                        <img src="/images/Article Covers/Rails-Cover.jpg" alt="Work Cover" class="img-fluid">
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <h1>The Return of the Rails</h1>
+                                    <i>2020 / 08 / 04</i>
+                                    <p>Summary Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel excepturi vero omnis, quam sint id dignissimos, nesciunt illum, voluptatum impedit aliquam. Ratione commodi velit quo.</p>
+                                    <a href="#" class="hvr-underline-from-left">Read More</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="container secondary">
+                            <div class="row">
+
+                                <div class="col-5">
+                                    <div class="img-container">
+                                        <img src="/images/Article Covers/Saint_Louis-Cover.jpg" alt="Work Cover" class="img-fluid">
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <h1>The Villa Saint-Louis Convent Tragedy</h1>
+                                    <i>2020 / 06 / 28</i>
+                                    <p>Summary Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus consequatur qui dolore iure, quo earum eveniet iste unde, numquam velit quidem beatae tempora, officia id.</p> 
+                                    <a href="#" class="hvr-underline-from-left">Read More</a> 
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <h1 class="title">Recent News</h1>
+
+            <div class="row">
+
+                <div class="col-md-5"><img src="/images/Author-Photo.jpg" alt="News icon" class="img-fluid"></div>
+
+                <div class="col-md-7">
+
+                    <h1>Latest peice of news from the website</h1>
+                    <i>2020 / 09 / 04</i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero nesciunt soluta omnis tempore eveniet rem itaque asperiores sit hic doloremque?</p>
+                    <a href="#" class="hvr-underline-from-left">Watch Now</a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer font-small special-color-dark pt-4">
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-md-6 mb-4">
+                    <div class="social-links">
+
+                        <img src="/images/SVGs/Facebook-icon.svg" class="img-fluid facebook-link">
+                        <img src="/images/SVGs/Twitter-icon.svg" class="img-fluid twitter-link">
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <form class="input-group">
+
+                        <input type="text" class="form-control form-control-sm email" placeholder="Your email"
+                        aria-label="Your email" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <a class="button hvr-icon-forward" href="#">Sign up <img src="/images/SVGs/Arrow_Light-Right.svg" alt="Arrow" class="hvr-icon"></a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="#" class="hvr-underline-from-left"> EasternHorizons.ca</a>
+        </div>    
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
 
+    <script src="/js/main.js"></script>
 </body>
 </html>

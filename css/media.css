@@ -1,0 +1,74 @@
+@media only screen and (max-width: 1199px) {
+    .others .row .primary {
+        padding: 20px 0;
+    }
+
+    .others .title {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* Shrink all font sizes by 2 */
+    * {
+        font-size: 12px;
+    }
+
+    /* Shrink the header's height */
+    :root {
+        --header-height: 20vh;
+    }
+
+    /* Re-allgn the latest book's section */
+    .container {
+        padding: 20px;
+    }
+
+    .latest .left img {
+        display: block;
+        width: 480px;
+        margin: auto;
+        padding: 50px;
+    }
+
+    .latest .right .btn-container a {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    /* Swap the nav bar from text to icons and hide the storie images */
+    nav a p {
+        display: none;
+    }
+
+    nav a img {
+        display: block;
+        width: 50px;
+        padding: 10px;
+    }
+
+    nav ul {
+        padding-top: 10px;
+    }
+
+    #magic-line {
+        bottom: 18px;
+    }
+
+    .others .secondary .col-5 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    /* Shrink margins on containers again */
+    .container {
+        padding: 10px;
+    }
+
+    /* Also shrink headers */
+    :root {
+        --header-font-size: 3.5rem;
+    }
+}
