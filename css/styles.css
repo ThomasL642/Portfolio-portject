@@ -19,6 +19,7 @@
     #FA9500 (Orange)
     */
     --highlight-color: #FA9500;
+    --border-radius: 0rem;
 }
 
 /* Universal classes */
@@ -149,6 +150,10 @@ nav a img {
     font-size: var(--text-font-size);
 }
 
+.latest .right .btn {
+    border-radius: var(--border-radius) !important;
+}
+
 .latest .right .primary {
     background-color: var(--highlight-color);
     border: var(--highlight-color) 2px solid;
@@ -225,6 +230,8 @@ nav a img {
 
 .others .img-container {
     overflow: hidden;
+
+    border-radius: var(--border-radius);
 }
 
 .others img {
@@ -250,6 +257,19 @@ nav a img {
     color: #333333;
 
     margin-bottom: 20px;
+}
+
+.news .img-container {
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+
+.news img {
+    transition-duration: var(--transition-duration);
+}
+
+.news img:hover {
+    transform: scale(1.1, 1.1);
 }
 
 .news .row h1 {
@@ -298,6 +318,8 @@ footer img {
     height: auto;
 
     margin-right: 20px;
+
+    border-radius: var(--border-radius);
 }
 
 footer img:hover {
@@ -316,13 +338,15 @@ footer .button {
     margin-left: 20px;
 
     padding: 5px 10px;
-    border-radius: 0.25em;
+    border-radius: var(--border-radius);
 }
 
 footer .button  img {
     height: 100%;
     margin: 0;
     margin-left: -5px;
+
+    border-radius: var(--border-radius);
 }
 
 footer .button:hover {
