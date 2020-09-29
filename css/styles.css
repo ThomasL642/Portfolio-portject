@@ -19,7 +19,7 @@
     #FA9500 (Orange)
     */
     --highlight-color: #FA9500;
-    --border-radius: 0rem;
+    --border-radius: 0.25rem;
 }
 
 /* Universal classes */
@@ -262,9 +262,14 @@ nav a img {
 .news .img-container {
     overflow: hidden;
     border-radius: var(--border-radius);
+
+    width: fit-content;
+    height: fit-content;
 }
 
 .news img {
+    width: 100%;
+    height: auto;
     transition-duration: var(--transition-duration);
 }
 
