@@ -1,5 +1,10 @@
 toggleNavOverlay();
 
+/* Alert on signup for email */
+$(".input-group-append").click(() => {
+    alert("Added email [" + $(".form-control-sm.email").val() + "] to mailing list!");
+});
+
 /* On Scroll */
 window.onscroll = function (e) {  
     toggleNavOverlay();
@@ -70,7 +75,7 @@ win.scroll(function(event) {
 });
 
 /* Magic Underline - https://css-tricks.com/jquery-magicline-navigation/ */
-let width_offset = 15;
+let width_offset = 10;
 $(function() {
 
     var $el, leftPos, newWidth,

@@ -45,11 +45,17 @@
     .latest .right .btn-container a {
         font-size: 16px;
     }
-}}
 }
 
-@media only screen and (max-width: 610px) {
+@media screen and (max-width: 767px) {
+    .others .secondary .col-5 {
+        display: none;
+    }
+}
+
+@media (max-width: 610px) {
     /* Swap the nav bar from text to icons and hide the storie images */
+
     nav a p {
         display: none;
     }
@@ -66,10 +72,6 @@
 
     #magic-line {
         bottom: 18px;
-    }
-
-    .others .secondary .col-5 {
-        display: none;
     }
 }
 
@@ -91,5 +93,12 @@
     /* Also shrink headers */
     :root {
         --header-font-size: 3.5rem;
+    }
+}
+
+/* Template class --------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+    .template .conditional-mt {
+        margin-top: 20px;
     }
 }

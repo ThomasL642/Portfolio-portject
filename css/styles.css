@@ -44,7 +44,7 @@ header {
 header .background {
     height: 100%;
 
-    background-image: url(/images/Homepage\ Background_2.JPG);
+    background-image: url(../images/Homepage\ Background_2.JPG);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -370,6 +370,46 @@ footer .footer-copyright a {
 
 footer .footer-copyright a:hover {
     text-decoration: none;
+}
+
+/* Secondary pages --------------------------------------------------------------------------------- */
+.page-content {
+    margin-top: var(--nav-height);
+    min-height: calc(100vh - var(--nav-height));
+}
+
+.template {
+    padding: 0 15px;
+    padding-top: 50px;
+}
+
+.template .title {
+    font-size: var(--subheader-font-size);
+    font-weight: bold;
+    color: #333333;
+
+    margin: 0;
+    padding: 0;
+}
+
+.rounded {
+    border-radius: var(--border-radius) !important;
+}
+
+.hide-overflow {
+    overflow: hidden;
+}
+
+.hvr-grow {
+    transition-duration: var(--transition-duration);
+}
+
+.hvr-grow:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.others.secondary {
+    background-color: #ffffff;
 }
 
 /* Global transitions */
