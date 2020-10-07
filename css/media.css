@@ -12,6 +12,10 @@
     .news .img-container {
         margin: 40px;
     }
+
+    .template .img-responsive {
+        width: 150px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -50,6 +54,14 @@
 @media screen and (max-width: 767px) {
     .others .secondary .col-5 {
         display: none;
+    }
+
+    .template .img-responsive.large {
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
     }
 }
 
@@ -90,6 +102,13 @@
         padding: 40px;
     }
 
+    .template .img-responsive {
+        display: block;
+        float: none;
+        margin: auto;
+        width: 60%;
+    }
+
     /* Also shrink headers */
     :root {
         --header-font-size: 3.5rem;
@@ -100,5 +119,13 @@
 @media only screen and (max-width: 767px) {
     .template .conditional-mt {
         margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .template .left, .template .right {
+        float: none;
+        display: block;
+        margin: auto !important;
     }
 }

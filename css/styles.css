@@ -35,6 +35,10 @@ body {
     overflow-x: hidden;
 }
 
+.input-group {
+    height: min-content;
+}
+
 /* Header */
 header {
     height: var(--header-height);
@@ -375,12 +379,15 @@ footer .footer-copyright a:hover {
 /* Secondary pages --------------------------------------------------------------------------------- */
 .page-content {
     margin-top: var(--nav-height);
-    min-height: calc(100vh - var(--nav-height));
+    min-height: calc(100vh - calc(var(--nav-height) + 150px));
 }
 
 .template {
-    padding: 0 15px;
-    padding-top: 50px;
+    padding: 50px 15px;
+}
+
+.grey {
+    background: #eeeeee;
 }
 
 .template .title {
@@ -390,6 +397,35 @@ footer .footer-copyright a:hover {
 
     margin: 0;
     padding: 0;
+}
+
+.template .img-responsive.left {
+    float: left;
+    margin-left: 0;
+}
+
+.template .img-responsive.right {
+    float: right;
+    margin-right: 0;
+}
+
+.template .img-responsive {
+    padding: 3px;
+    border: #DDDDDD 1px solid;
+    margin: 0 10px;
+
+    width: 300px;
+    height: auto;
+}
+
+.template .img-responsive.large {
+    width: 400px;
+}
+
+.template .primary {
+    background-color: var(--highlight-color);
+    border: var(--highlight-color) 2px solid;
+    color: #eeeeee;
 }
 
 .rounded {
