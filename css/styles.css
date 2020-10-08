@@ -176,6 +176,7 @@ nav ul {
     padding-top: 17px;
 
     width: fit-content;
+    width: -moz-fit-content;
 
     list-style: none;
 }
