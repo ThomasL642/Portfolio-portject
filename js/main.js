@@ -5,6 +5,7 @@ $(".input-group-append").click(() => {
     alert("Added email [" + $(".form-control-sm.email").val() + "] to mailing list!");
 });
 
+
 /* On Scroll */
 window.onscroll = function (e) {  
     toggleNavOverlay();
