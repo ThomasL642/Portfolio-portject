@@ -5,7 +5,6 @@ $(".input-group-append").click(() => {
     alert("Added email [" + $(".form-control-sm.email").val() + "] to mailing list!");
 });
 
-
 /* On Scroll */
 window.onscroll = function (e) {  
     toggleNavOverlay();
@@ -76,21 +75,27 @@ win.scroll(function(event) {
 });
 
 /* Magic Underline - https://css-tricks.com/jquery-magicline-navigation/ */
-let width_offset = 10;
+let width_offset = 10; // Shrinks the line's width by this amount
+
+// Initialize Jquery function
 $(function() {
 
+    // Get the positional info for the nav's ul
     var $el, leftPos, newWidth,
         $mainNav = $("nav ul");
     
+        // Add a new element to the nav's ul (the magic line)
     $mainNav.append("<li id='magic-line'></li>");
     var $magicLine = $("#magic-line");
     
+    // Position the line under the current page item after applying the width_offset
     $magicLine
         .width($(".current_page_item").width() - width_offset*2)
         .css("left", $(".current_page_item a").position().left + width_offset)
         .data("origLeft", $magicLine.position().left)
         .data("origWidth", $magicLine.width());
-        
+    
+    // On hovering over a list element, moves the line to underneath the selected item
     $("nav ul li a").hover(function() {
         $el = $(this);
 
@@ -109,6 +114,7 @@ $(function() {
     });
 });
 
+// Resets the line's position on window resize
 $(window).resize(function () {
     var $magicLine = $("#magic-line");
 
